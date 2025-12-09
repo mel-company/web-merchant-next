@@ -5,6 +5,7 @@ type CartProduct = ProductType & { qty: number };
 
 type Store = {
   count: number;
+  productQty: (productId: string) => number;
   addProduct: (product: ProductType) => void;
   removeProduct: (product: ProductType) => void;
   products: CartProduct[];
