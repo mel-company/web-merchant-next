@@ -5,7 +5,7 @@ import Nav from "./components/layout/nav";
 
 const cairo = Cairo({
   variable: "--font-cairo",
-  subsets: ["latin"],
+  subsets: ["arabic", "latin", "latin-ext"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body className={`${cairo.variable} antialiased`}>
         <Nav />
         {children}

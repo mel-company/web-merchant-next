@@ -8,11 +8,18 @@ const DynamicCartBtn = ({ product }: { product: ProductType }) => {
   const { qty } = getProductQty({ products, productId: product.id });
 
   return (
-    <button onClick={() => addProduct(product)} className="btn btn-primary">
-      <button onClick={() => removeProduct(product)}></button>
+    <div className="flex items-center gap-2 justify-between w-full">
+      <button
+        className="btn btn-outline"
+        onClick={() => removeProduct(product.id)}
+      >
+        -
+      </button>
       <span>{qty}</span>
-      <button onClick={() => addProduct(product)}></button>
-    </button>
+      <button className="btn btn-primary" onClick={() => addProduct(product)}>
+        +
+      </button>
+    </div>
   );
 };
 

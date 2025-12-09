@@ -5,7 +5,10 @@ const DefaultCartBtn = ({ product }: { product: ProductType }) => {
   const { addProduct } = useCartStore();
 
   return (
-    <button onClick={() => addProduct(product)} className="btn btn-primary">
+    <button
+      onClick={() => addProduct(product)}
+      className="btn btn-primary btn-wide w-full"
+    >
       Add to Cart
     </button>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { useCartStore } from "@/app/store/cart";
 import { ProductType } from "@/app/types";
 import DefaultCartBtn from "./default";
