@@ -7,9 +7,9 @@ const DefaultCartBtn = ({ product }: { product: ProductType }) => {
   return (
     <button
       onClick={() => addProduct(product)}
-      className="btn btn-primary btn-wide w-full"
+      className="btn btn-primary text-primary-content hover:bg-primary/90 rounded-full w-full shadow-md hover:shadow-lg transition-all border-none font-bold"
     >
-      Add to Cart
+      أضف للسلة
     </button>
   );
 };

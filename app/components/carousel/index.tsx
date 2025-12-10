@@ -20,7 +20,7 @@ const Carousel = ({ children, className, options }: CarouselProps) => {
 
   return (
     <div className={classnames("overflow-hidden", className)} ref={emblaRef}>
-      <div className="flex gap-4">{children}</div>
+      <div className="flex gap-2 lg:gap-4">{children}</div>
     </div>
   );
 };
