@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         hostname: "i.pinimg.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.pravatar.cc",
+        pathname: "/**",
+      },
     ],
   },
 };
